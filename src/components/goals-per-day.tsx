@@ -45,8 +45,8 @@ export const GoalsPerDay = () => {
                   <li key={goal.id} className="flex items-center gap-2">
                     <CheckCircle2 className="size-4 text-pink-500" />
                     <span className="text-sm text-zinc-400">
-                      Você completou "
-                      <span className="text-zinc-100">{goal.title}</span>" às{' '}
+                      Você completou “
+                      <span className="text-zinc-100">{goal.title}</span>” às{' '}
                       <span className="text-zinc-100">{time}h</span>
                       <button
                         type="button"
