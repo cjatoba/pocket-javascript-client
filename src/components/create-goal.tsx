@@ -55,8 +55,9 @@ export const CreateGoal = () => {
           </div>
 
           <DialogDescription>
-            Adicione atividades que te fazem bem e que você quer continuar
-            praticando toda semana.
+            Adicione atividades que{' '}
+            <span className="underline underline-offset-2">te fazem bem</span> e
+            que você quer continuar praticando toda semana.
           </DialogDescription>
         </div>
 
