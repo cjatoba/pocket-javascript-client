@@ -1,11 +1,4 @@
-type SummaryResponse = {
-  completed: number
-  total: number
-  goalsPerDay: Record<
-    string,
-    { id: string; title: string; completedAt: string }[]
-  >
-}
+import type { SummaryResponse } from '../types'
 
 export const getSummary = async (): Promise<SummaryResponse> => {
   const response = await fetch('http://localhost:3333/summary')
