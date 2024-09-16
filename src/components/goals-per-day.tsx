@@ -13,8 +13,8 @@ export const GoalsPerDay = () => {
   const { mutateAsync: deleteGoalCompletionMutate } = useMutation({
     mutationFn: deleteGoalCompletion,
   })
-  const handleUndo = async (goalId: string) => {
-    await deleteGoalCompletionMutate(goalId)
+  const handleUndo = async (goalCompletionsId: string) => {
+    await deleteGoalCompletionMutate(goalCompletionsId)
 
     await queryClient.invalidateQueries({ queryKey: ['summary'] })
     await queryClient.invalidateQueries({ queryKey: ['pending-goals'] })
